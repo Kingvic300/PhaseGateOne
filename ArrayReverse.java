@@ -5,11 +5,10 @@ public class ArrayReverse{
 	}
 	public static void ReverseString(){
 	String[] sentence = {"There", "is", "a", "tide", "in", "the", "affairs", "of", "men"};
-	String[] reversed = new String[sentence.length];
 
-		for(int count = 0;count <= sentence.length;count++){
-			reversed[sentence.length] = sentence[count];
+		for(int count = sentence.length-1; count >= 0; count--){
+		System.out.print(sentence[count]+" ");
 		}
-		System.out.print(Arrays.toString(reversed));
+
 	} 
 }
